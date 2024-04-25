@@ -1,9 +1,10 @@
+import { tesztesetek } from "./tesztek.js";
 
 console.log(masodfokuEgyenletMegoldasa(1,2,1))
 
 // Másodfokú egyenlet calculator online http://eprog.hu/oktatas/javascript/feladat05.html
 
-function masodfokuEgyenletMegoldasa(a, b, c) {
+export function masodfokuEgyenletMegoldasa(a, b, c) {
     let x1 = (-b + Math.sqrt(b * b - 4 * a * c)) / (2 * a);
     let x2 = (-b - Math.sqrt(b * b - 4 * a * c)) / (2 * a);
     const eredmeny = {
